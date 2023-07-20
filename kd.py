@@ -4,6 +4,8 @@ import streamlit as st
 import pandas as pd #pandas is how we get data into a data frame 
 import numpy
 
+pb = 'Production budget $'
+
 #Taking data and putting it into a data frame with pandas
 dataPath = ('./filmStats/movie_statistic_dataset.csv')
 df = pd.read_csv(dataPath)
@@ -33,4 +35,5 @@ st.write(selectedMovie + "'s average rating is " + str(averageRating))
 button = st.button("Click to see " + selectedMovie + "'s budget.")
 
 if button:
-    st.write("Hello, world!")
+    prodBudget = selectedMovieRow['Production budget $'].values[0]
+    st.write('prodBudget')
