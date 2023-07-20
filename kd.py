@@ -17,7 +17,4 @@ movieTitles = df['movie_title'].unique()
 selectedMovie = st.selectbox("Select a movie:", movieTitles)
 st.write("You selected:", selectedMovie)
 
-st.dataframe(
-        columns=('Movie rating:')
-        df['movie_averageRating'].unique()
-        )
+st.dataframe(df['movie_averageRating'].unique())
