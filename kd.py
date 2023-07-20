@@ -16,3 +16,5 @@ df = pd.read_csv(dataPath)
 movieTitles = df['movie_title'].unique()
 selectedMovie = st.selectbox("Select a movie:", movieTitles)
 st.write("You selected:", selectedMovie)
+
+st.dataframe(df['movie_title'].unique())
