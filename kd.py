@@ -1,4 +1,4 @@
 import streamlit as st 
 import pandas as pd
 
-st.write('this is a test')
+dataPath = ('./filmStats/movie_statistic_dataset.csv')
