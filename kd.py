@@ -36,4 +36,4 @@ button = st.button("Click to see " + selectedMovie + "'s budget.")
 
 if button:
     prodBudget = selectedMovieRow['Production budget $'].values[0]
-    st.write("$" + prodBudget)
+    st.write("$" + str(prodBudget))
