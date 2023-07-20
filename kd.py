@@ -13,6 +13,6 @@ df = pd.read_csv(dataPath)
 #The commented code above didnt work because I didn't specify what particular column I need to len.
 #this was not especially relevant anyways. i wasted some time.
 
-user_name = st.text_input("Please enter your name:")
-st.write("Hello, " + user_name + "! Nice to meet you.")
-
+movieTitles = df['movie_title'].unique()
+selectedMovie = st.selectbox("Select a movie:", movieTitles)
+st.write("You selected:", selectedMovie)
