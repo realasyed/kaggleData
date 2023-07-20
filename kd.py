@@ -28,3 +28,9 @@ st.write(selectedMovie + "'s average rating is " + str(averageRating))
 #The .values[0] section indexes for the first instance of
 #movie_averageRating and sets that equal to averageRating
 #just in case two selectedMovie's have the same name. 
+
+#Logic
+button = st.button("Click to see " + selectedMovie + "'s budget.")
+
+if button:
+    st.write("Hello, world!")
