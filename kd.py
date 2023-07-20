@@ -13,6 +13,7 @@ df = pd.read_csv(dataPath)
 #The commented code above didnt work because I didn't specify what particular column I need to len.
 #this was not especially relevant anyways. i wasted some time.
 
+
 # Ask for the user's name
 user_name = input("Please enter your name: ")
 
