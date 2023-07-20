@@ -13,7 +13,7 @@ st.write("You selected:", selectedMovie)
 
 selectedMovieRow = df[df['movie_title'] == selectedMovie] #showing a df of movie_titles but only selectedMovie title(s).
 averageRating = selectedMovieRow['movie_averageRating'].values[0] #sets averageRating to first instance of a movie's particular rating. it searches the selectedMovieRow.
-st.write(selectedMovie + "'s average rating is" + str(averageRating))
+st.write(selectedMovie + "'s average rating is " + str(averageRating))
 
 #The second code snippet is a little unintuitive; here's how it works:
 #After selecting a movie, selectedMovieRow creates another data frame
