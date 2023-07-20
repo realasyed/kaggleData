@@ -7,7 +7,7 @@ import numpy
 #Taking data and putting it into a data frame with pandas
 dataPath = ('./filmStats/movie_statistic_dataset.csv')
 df = pd.read_csv(dataPath)
-movieTitles = df['movie_title'].unique()
+movieTitles = df['movie_title'].unique() #movieTitles is df, but not just df! it is the movie_title section of dataPath.
 selectedMovie = st.selectbox("Select a movie:", movieTitles)
 st.write("You selected:", selectedMovie)
 
