@@ -1,4 +1,10 @@
 #Comments are for me! If you think they are bad idc!!!!
+from transformers import pipeline
+import os
+import torch
+from torch import nn
+from torch.utils.data import DataLoader
+from torchvision import datasets, transforms
 import random
 import streamlit as st 
 import pandas as pd #pandas is how we get data into a data frame 
@@ -31,12 +37,16 @@ st.write(selectedMovie + "'s average rating is " + str(averageRating))
 #movie_averageRating and sets that equal to averageRating
 #just in case two selectedMovie's have the same name. 
 
-#Logic
+#Logic. (nvm, I wanna do ai/ml stuff)
 button = st.button("Click to see " + selectedMovie + "'s budget.")
 
 if button:
     prodBudget = selectedMovieRow['Production budget $'].values[0]
-    
     st.write("Budget: " "$" + str(prodBudget))
-    #TRY TO DO SOME MATH OR LOGIC STUFF HERE!!!!!
-    
+
+#AI/ML maybe???
+#Okay, I'm thinking I should let the user select an input like a budget and
+#a year and then have some ai guess the genre. To avoid being a look up with 
+#extra steps the user could input budget/year combos that are not in 
+#the kaggle data set and the ai could extrapolate a budget. This could
+#be a novel thing to mess around with.
