@@ -1,5 +1,4 @@
 #Comments are for me! If you think they are bad idc!!!!
-from transformers import pipeline
 import os
 import torch
 from torch import nn
