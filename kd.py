@@ -51,4 +51,4 @@ if button:
 #be a novel thing to mess around with.
 
 title = st.text_input('Movie title')
-st.write('The current movie title is', title)
+st.write('The current movie title is', title
