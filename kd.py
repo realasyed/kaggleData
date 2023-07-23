@@ -1,6 +1,6 @@
 #Comments are for me! If you think they are bad idc!!!! soicanpush
 import os
-import torch
+import torch.cuda as torch
 from torch import nn
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
