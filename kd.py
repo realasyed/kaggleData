@@ -1,6 +1,5 @@
 #Comments are for me! If you think they are bad idc!!!! soicanpush
 import torch.cuda as torch
-from torch.cuda import nn
 import streamlit as st 
 import pandas as pd #pandas is how we get data into a data frame 
 
