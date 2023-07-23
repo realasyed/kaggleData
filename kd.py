@@ -7,7 +7,6 @@ from torchvision import datasets, transforms
 import random
 import streamlit as st 
 import pandas as pd #pandas is how we get data into a data frame 
-import numpy
 
 #Taking data and putting it into a data frame with pandas
 dataPath = ('./filmStats/movie_statistic_dataset.csv')
