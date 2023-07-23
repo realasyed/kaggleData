@@ -45,8 +45,11 @@ if button:
     st.write("Budget: " "$" + str(prodBudget))
 
 #AI/ML maybe???
-#Okay, I'm thinking I should let the user select an input like a budget and
+#Okay, I'm thinking I should let the user input an arbitrary input like a budget and
 #a year and then have some ai guess the genre. To avoid being a look up with 
 #extra steps the user could input budget/year combos that are not in 
 #the kaggle data set and the ai could extrapolate a budget. This could
 #be a novel thing to mess around with.
+
+title = st.text_input('Movie title')
+st.write('The current movie title is', title)
