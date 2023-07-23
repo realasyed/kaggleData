@@ -9,8 +9,6 @@ import streamlit as st
 import pandas as pd #pandas is how we get data into a data frame 
 import numpy
 
-pb = 'Production budget $'
-
 #Taking data and putting it into a data frame with pandas
 dataPath = ('./filmStats/movie_statistic_dataset.csv')
 df = pd.read_csv(dataPath)
